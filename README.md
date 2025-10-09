@@ -1,1 +1,2 @@
-# COMP-359-Assignment2
+# **COMP-359-Assignment2**
+## **References & Citations:**

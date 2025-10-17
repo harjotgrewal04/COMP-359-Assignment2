@@ -1,4 +1,12 @@
 # **COMP-359-Assignment2**
+## **Team Members:**
+- Diana Emel
+- Tolu Adekore
+- Harjot Grewal
+
+## **Implementing two Gaussian Elimination Algorithms:**
+In our group's project we discussed implementing two Gaussian Elimination algorithms where one is naive and the other is not. One of the versions includes partial pivoting while the other does not. The main difference between these two versions is the handling of numbers and how the naive algorithm can run into errors more than the one which includes partial pivoting.
+
 ## **References & Citations:**
 
 - GeeksforGeeks. (n.d.). *Gaussian Elimination to Solve Linear Equations*. GeeksforGeeks. https://www.geeksforgeeks.org/dsa/gaussian-elimination/

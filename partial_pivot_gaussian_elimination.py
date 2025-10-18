@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 def partial_pivot_gaussian_elimination(A):
     n = len(A)  # number of rows
@@ -87,5 +88,8 @@ def test_partial_pivot_gaussian_elimination():
 
 
 if __name__ == "__main__":
-  
+    start_time = time.perf_counter()
     test_partial_pivot_gaussian_elimination()
+    end_time = time.perf_counter()
+    elapsed_time = end_time - start_time
+    print("Execution Time is: ",elapsed_time)

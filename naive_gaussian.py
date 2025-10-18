@@ -1,5 +1,6 @@
 # naive_gaussian.py
 import numpy as np
+import time
 
 def gaussian_elimination_naive(A, b, verbose=True):
     """
@@ -125,5 +126,9 @@ def demonstrate_limitations():
         print(f"   {limitation}")
 
 if __name__ == "__main__":
+    start_time = time.perf_counter()
     test_naive_version()
+    end_time = time.perf_counter()
+    elapsed_time = end_time - start_time
+    print("Execution Time: ", elapsed_time)
     demonstrate_limitations()

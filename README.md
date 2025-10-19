@@ -1,4 +1,4 @@
-# **COMP-359-Assignment2**
+# **COMP359-Assignment02: Implememnting Gaussian Elimination in Python**
 ## **Team Members:**
 - Diana Emel
 - Tolu Adekore

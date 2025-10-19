@@ -25,4 +25,16 @@
 
 ## **2. Performance Analysis**
 
-### **2.1 
+### **2.1 Naive Gaussian Elimination**
+- Time Complexity O(n^3)
+- Space Complexity O(n^2)
+- Execution time: 0.0007377089932560921 seconds
+
+### **2.2 Partial Pivot Gaussian Elimination**
+- Time Complexity O(n^3)
+- Space Complexity O(n^2)
+- Execution time: 0.04204920801566914 seconds
+
+### **2.3 Analysis of Results**
+- Naive gaussian elimination may be a lot quicker than partial pivot gaussian elimination however a lot more unstable
+- Both share the same time & space complexity as forward complexity is where the bulk of the operations are to reduce the matrix

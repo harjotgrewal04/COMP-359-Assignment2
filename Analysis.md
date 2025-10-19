@@ -37,4 +37,37 @@
 
 ### **2.3 Analysis of Results**
 - Naive gaussian elimination may be a lot quicker than partial pivot gaussian elimination however a lot more unstable
-- Both share the same time & space complexity as forward complexity is where the bulk of the operations are to reduce the matrix
+- Both share the same time & space complexity as forward elimination is where the bulk of the operations are to reduce the matrix
+- Naive gaussian elimination is a lot more susceptible to error
+- Partial pivoting adds a slight constant overhead
+
+## **3. Design Choices**
+
+### **3.1 Using different matrix variations**
+- Allows to show more use cases and better demonstrations of how the algorithmm handles various sizes
+- Explains the differences in systems where one may succeed while the other fails
+
+### **3.2 Why use a more complicated algorithm?**
+- Has better stability
+- Handles rounding erros better & can deal with pivot elements
+- Provides more benefits while holding the same time complexity
+
+### **3.3 Timing different matrix systems**
+- Allows to see the difference in timing of larger and smaller scale systems
+- Shows difference when ran on different hardware systems
+
+## **4. Future Improvements**
+
+### **4.1 Possible Enhancements**
+- Adding user input, so a user can input a matrix of their desire
+- Take in equations instead of numbers, allows for easier user entry
+
+### **4.2 Performance Optimization**
+- Use a faster pivot search like using something built in like argmax
+- 
+
+
+## **5. Conclusion**
+
+
+

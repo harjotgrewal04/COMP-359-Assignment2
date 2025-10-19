@@ -13,7 +13,9 @@
   
 ## **1. Comparison of Two Versions**
 
-### **1.1 Naive Version**
+### **1.1 Algorithm Limitations**
+- Partial pivoting has better and more accurate treatment of numerical values
+- Pivoting helps with rounding error 
 - Made up of two steps Forward Elimination & Back Substitution
 - Poor stability, open to round off errors
 - Also open to errors regarding the pivot element & 0
@@ -64,10 +66,10 @@
 
 ### **4.2 Performance Optimization**
 - Use a faster pivot search like using something built in like argmax
-- 
-
+- Use Scaled Partial Pivoting for even greater numerical stability 
 
 ## **5. Conclusion**
+
 
 
 

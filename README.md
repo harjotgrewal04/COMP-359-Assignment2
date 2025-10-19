@@ -17,4 +17,5 @@ In our group's project we discussed implementing two Gaussian Elimination algori
 - W3Schools. (n.d.). Matplotlib Bars. W3Schools. Retrieved October 18, 2025, from https://www.w3schools.com/python/matplotlib_bars.asp
 - Hjelle, G. A. (2024, December 8). Python timer functions: Three ways to monitor your code. Real Python. Retrieved October 18, 2025, from https://realpython.com/python-timer/
 - astudentofmaths. (2017, December 6). Why is efficiency of Gaussian Elimination O(n³)? Mathematics StackExchange. Retrieved October 18, 2025, from https://math.stackexchange.com/questions/2554714/why-is-efficency-of-gaussian-elimination-on3
+- GeeksforGeeks. (2024, March 8). numpy.argmax() in Python. GeeksforGeeks. Retrieved October 19, 2025, from https://www.geeksforgeeks.org/python/numpy-argmax-python/
   

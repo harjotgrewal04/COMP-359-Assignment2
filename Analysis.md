@@ -14,16 +14,15 @@
 ## **1. Comparison of Two Versions**
 
 ### **1.1 Algorithm Limitations**
-- Partial pivoting has better and more accurate treatment of numerical values
-- Pivoting helps with rounding error 
-- Made up of two steps Forward Elimination & Back Substitution
-- Poor stability, open to round off errors
-- Also open to errors regarding the pivot element & 0
+- Naive elimination is not good at handling a zero element in the pivot position
+- Partial pivot is a step up from naive elimination but we can improve number stablity even more with scaled partial pivot
+- Partial pivot requires a more complex implementation to find the pivot and the swapping of rows
 
-### **1.2 Partial Pivoting**
-- Has three steps with an addition of Partial Pivoting
-- Has increased stablitity, deals better with round off errors
-- Better handling of pivot element
+### **1.2 Numerical Stability**
+- Naive gaussian elimination is exposed to rounding errors
+- Partial pivot avoids smaller pivots to prevent numbers from blowing up.
+- Naive gausssian elimination can provide inaccurate results
+- Partial pivot focuses on numerical stability while naive gaussian focuses on simplifying the elimination process
 
 ## **2. Performance Analysis**
 
@@ -42,6 +41,10 @@
 - Both share the same time & space complexity as forward elimination is where the bulk of the operations are to reduce the matrix
 - Naive gaussian elimination is a lot more susceptible to error
 - Partial pivoting adds a slight constant overhead
+
+### **2.4 Test Cases**
+
+#### **2.4.1 Naive Gaussian Elimination Test Cases**
 
 ## **3. Design Choices**
 

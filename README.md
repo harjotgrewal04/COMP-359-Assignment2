@@ -11,9 +11,9 @@ In our group's project we discussed implementing two Gaussian Elimination algori
 ## **Plan & Logging of Work:**
 - **Version control:** Git was used to track all contributions. See `git_log.txt`. 
 - **Task split:** 
- - **Diana Emal and Harjot Grewal:** Implemented Gaussian Elimination algorithm with partial pivoting, and write a test function to test the algoithm on different systems. 
-  - **Tolu Adekore:** Implemented and tested Naive Gaussian Elimination algorithm.
-- All members contributed coding, testing, and documentation.
+  - **Diana Emal and Harjot Grewal:** Implemented Gaussian Elimination algorithm with partial pivoting, and wrote a test function to test the algoithm on different systems. 
+   - **Tolu Adekore:** Implemented and tested Naive Gaussian Elimination algorithm.
+- All members contributed in coding, testing, and documentation.
 
 ## **Debugging / Testing Code**:
 - **Methods used:** verbose print statements, assertions, NumPy result comparison, structured test cases, and timing analysis.  

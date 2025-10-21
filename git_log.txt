@@ -1,0 +1,57 @@
+Author: harjotgrewal04 <133055140+harjotgrewal04@users.noreply.github.com>
+Date:   Sun Oct 19 19:50:30 2025 -0700
+
+    Add reference to partial pivoting resource
+
+commit 04b7c5c55d71fd535672aec9e5f761e1c52a910b
+Author: harjotgrewal04 <133055140+harjotgrewal04@users.noreply.github.com>
+Date:   Sun Oct 19 19:46:13 2025 -0700
+
+    Update Analysis.md
+commit 6f1c16ed233d06d6254c5d279dc0865a92c2ac84
+Author: Harjot Grewal <harjotgrewal@Harjots-MacBook-Pro.local>
+Date:   Thu Oct 16 21:26:02 2025 -0700
+
+    Delete Original File
+
+commit 7e1f74261340700b63cb523c3f28e40d663b54cd
+Author: harjotgrewal04 <133055140+harjotgrewal04@users.noreply.github.com>
+Date:   Thu Oct 16 21:22:37 2025 -0700
+
+    Update README with team members and project overview
+    
+    Added team members and project details for Gaussian Elimination algorithms.
+
+commit 0a320b0b4273594954fbcc40766ff1384e885d72
+Author: Tolu Adekore <117423112+ToluAdekore@users.noreply.github.com>
+Date:   Tue Oct 14 18:18:07 2025 -0700
+
+    Update README.md
+
+commit 4d35f71b85f023d7d9f198119730e33fc193127b
+Author: Tolu Adekore <117423112+ToluAdekore@users.noreply.github.com>
+Date:   Tue Oct 14 18:10:36 2025 -0700
+
+    Add files via upload
+
+commit 1614770219141364963ecce7674c16187e50f28f
+Author: dianaemal <146597343+dianaemal@users.noreply.github.com>
+Date:   Tue Oct 14 17:57:30 2025 -0700
+
+    Update README.md
+
+commit e87f3a1028f89d5a49d50e24a3061ec08657bc53
+Author: dianaemal <146597343+dianaemal@users.noreply.github.com>
+Date:   Tue Oct 14 17:32:20 2025 -0700
+
+    Update README.md
+
+commit 1aa3fc6749b14a9dcde0c742b8569ad4b1ce2a81
+Author: Diana Emal <diana_emal@outlook.com>
+Date:   Tue Oct 14 17:25:15 2025 -0700
+
+     implemeted partial pivot gaussian elimination
+
+commit 407f35e15213d3438f2207ac26c7bbc3355163ec
+Author: Harjot Grewal <harjotgrewal@Harjots-MacBook-Pro.local>
+Date:   Thu Oct 9 12:00:04 2025 -0700

@@ -7,6 +7,33 @@
 ## **Implementing two Gaussian Elimination Algorithms:**
 In our group's project we discussed implementing two Gaussian Elimination algorithms where one is naive and the other is not. One of the versions includes partial pivoting while the other does not. The main difference between these two versions is the handling of numbers and how the naive algorithm can run into errors more than the one which includes partial pivoting.
 
+
+## **Plan & Logging of Work:**
+- **Version control:** Git was used to track all contributions. See `git_log.txt`. 
+- **Task split:** 
+ - **Diana Emal and Harjot Grewal:** Implemented Gaussian Elimination algorithm with partial pivoting, and write a test function to test the algoithm on different systems. 
+  - **Tolu Adekore:** Implemented and tested Naive Gaussian Elimination algorithm.
+- All members contributed coding, testing, and documentation.
+
+## **Debugging / Testing Code**:
+- **Methods used:** verbose print statements, assertions, NumPy result comparison, structured test cases, and timing analysis.  
+- **Naive Gaussian Elimination:**  
+  - Used detailed print statements (`verbose=True`) to trace each elimination and substitution step.  
+  - Included zero-pivot checks and descriptive error messages for easier debugging.  
+  - Compared results with `np.linalg.solve()` to assess correctness.  
+  - Demonstrated key limitations (zero pivot, instability, lack of pivoting) through test cases.  
+- **Partial Pivoting Gaussian Elimination:**  
+  - Implemented structured tests with assertions to automatically verify correctness.  
+  - Used pivot selection print logs and row-swap outputs for debugging.  
+  - Tested performance using `time.perf_counter()` and visualized results using Matplotlib bar charts.  
+- **Example test cases:**  
+  - Well-conditioned system → correct solution produced.  
+  - Zero pivot system → triggers “Zero pivot error” message.  
+  - Small pivot system → demonstrates numerical instability.  
+  - Random 5×5 system → validated against `np.linalg.solve()`.  
+  - Singular system → raises `ValueError` as expected.  
+- **Logs:** All printed intermediate matrices, pivot choices, elimination steps, and final results to the console for debugging and verification can be found in `tests` folder.
+
 ## **References & Citations:**
 
 - GeeksforGeeks. (n.d.). *Gaussian Elimination to Solve Linear Equations*. GeeksforGeeks. https://www.geeksforgeeks.org/dsa/gaussian-elimination/

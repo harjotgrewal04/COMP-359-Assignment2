@@ -1,0 +1,69 @@
+🧪 TESTING NAIVE GAUSSIAN ELIMINATION
+============================================================
+
+1. WELL-CONDITIONED SYSTEM:
+🔹 NAIVE GAUSSIAN ELIMINATION
+==================================================
+Initial system:
+   [  4.0000  1.0000  2.0000 |   4.0000]
+   [  3.0000  5.0000  1.0000 |   7.0000]
+   [  1.0000  1.0000  3.0000 |   3.0000]
+
+🎯 Step 1: Pivot at position (0,0) = 4.0000000000
+   Eliminating row 1: factor = 3.000000/4.000000 = 0.750000
+   Updated system:
+   [  4.0000  1.0000  2.0000 |   4.0000]
+   [  0.0000  4.2500 -0.5000 |   4.0000]
+   [  1.0000  1.0000  3.0000 |   3.0000]
+   Eliminating row 2: factor = 1.000000/4.000000 = 0.250000
+   Updated system:
+   [  4.0000  1.0000  2.0000 |   4.0000]
+   [  0.0000  4.2500 -0.5000 |   4.0000]
+   [  0.0000  0.7500  2.5000 |   2.0000]
+
+🎯 Step 2: Pivot at position (1,1) = 4.2500000000
+   Eliminating row 2: factor = 0.750000/4.250000 = 0.176471
+   Updated system:
+   [  4.0000  1.0000  2.0000 |   4.0000]
+   [  0.0000  4.2500 -0.5000 |   4.0000]
+   [  0.0000  0.0000  2.5882 |   1.2941]
+
+🎯 Step 3: Pivot at position (2,2) = 2.5882352941
+
+✅ Forward elimination completed
+Upper triangular system:
+   [  4.0000  1.0000  2.0000 |   4.0000]
+   [  0.0000  4.2500 -0.5000 |   4.0000]
+   [  0.0000  0.0000  2.5882 |   1.2941]
+   x[2] = (1.294118 - 0.000000) / 2.588235 = 0.500000
+   x[1] = (4.000000 - -0.250000) / 4.250000 = 1.000000
+   x[0] = (4.000000 - 2.000000) / 4.000000 = 0.500000
+Result: [0.5 1.  0.5] - Status: Success
+NumPy reference: [0.5 1.  0.5]
+
+2. ZERO PIVOT SYSTEM:
+🔹 NAIVE GAUSSIAN ELIMINATION
+==================================================
+Initial system:
+   [  0.0000  2.0000  3.0000 |   8.0000]
+   [  1.0000  4.0000  5.0000 |  15.0000]
+   [  2.0000  5.0000  7.0000 |  22.0000]
+
+🎯 Step 1: Pivot at position (0,0) = 0.0000000000
+❌ CRITICAL ERROR: Zero pivot at position (0,0)!
+   Division by zero inevitable - Algorithm fails!
+Result: None - Status: Zero pivot error
+
+3. SMALL PIVOT SYSTEM:
+Result: [2.50000021 0.5        0.5       ] - Status: Success
+Error vs NumPy: 2.07e-07
+Execution Time:  0.0014788750559091568
+
+
+🔍 KEY LIMITATIONS OF NAIVE VERSION:
+============================================================
+   1. ZERO PIVOT FAILURE: Cannot handle zero diagonal elements
+   2. NUMERICAL INSTABILITY: Small pivots amplify rounding errors
+   3. NO PIVOTING: Cannot rearrange rows to find better pivots
+   4. POOR ERROR HANDLING: Fails catastrophically on many systems
+   5. ACCUMULATED ERRORS: Repeated operations increase floating-point errors
